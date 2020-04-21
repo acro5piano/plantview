@@ -1,21 +1,23 @@
 {
-  "name": "tui-editor-test",
+  "name": "plantview",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:acro5piano/tui-editor-test",
   "author": "gosho-kazuya <ketsume0211@gmail.com>",
   "license": "MIT",
-  "scripts": {
-    "start": "concurrently yarn:start:js yarn:start:docker",
-    "start:docker": "docker-compose up",
-    "start:js": "webpack-dev-server --hot"
+  "bin": {
+    "plantview": "bin/plantview.js"
   },
   "dependencies": {
+    "chalk": "^4.0.0",
     "concurrently": "^5.1.0",
+    "execa": "^4.0.0",
     "html-webpack-plugin": "^4.2.0",
+    "prompts": "^2.3.2",
     "raw-loader": "^4.0.1",
     "webpack": "^4.42.1",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.10.3",
+    "yargs": "^15.3.1"
   },
   "devDependencies": {
     "husky": "^4.2.5",
