@@ -1,9 +1,9 @@
 const webpack = require("webpack");
 const WebpackDevServer = require("webpack-dev-server");
 const path = require("path");
-const port = 9292;
-
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+
+const port = 9292;
 
 const config = {
   mode: "development",
@@ -21,16 +21,20 @@ const config = {
 
 const options = {
   hot: true,
-  contentBase: "www"
+  open: true
 };
 
 const server = new WebpackDevServer(webpack(config), options);
 
-console.log("Starting the dev web server...");
+function run() {
+  console.log("Starting the dev web server...");
 
-server.listen(port, "0.0.0.0", function(err) {
-  if (err) {
-    console.log(err);
-  }
-  console.log("WebpackDevServer listening at localhost:", port);
-});
+  server.listen(port, "0.0.0.0", function(err) {
+    if (err) {
+      console.log(err);
+    }
+    console.log("WebpackDevServer listening at localhost:", port);
+  });
+}
+
+module.exports = { run };
