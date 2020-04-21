@@ -44,7 +44,7 @@ function startServer({ umlFilePath, maybePort }) {
       if (err) {
         error(err)
       }
-      info('WebpackDevServer listening at localhost:', port)
+      info(`Listening at http://localhost:${port}`)
       resolve()
     })
   })
