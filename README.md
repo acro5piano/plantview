@@ -1,6 +1,6 @@
 # Plantview
 
-PlantUML development viewer
+PlantUML viewer
 
 # Features
 
@@ -17,8 +17,19 @@ First, install Plantview:
 npm -g install plantview
 ```
 
-Then, run the command:
+Write your UML:
+
+```plantuml
+' my-diagram.uml
+@startuml
+A -> B: Say Hello
+@enduml
+```
+
+Then, run the following command:
 
 ```
 plantview my-diagram.uml
 ```
+
+You will see your default browser launch. Every time you update the UML file, your browser will automatically reload it.

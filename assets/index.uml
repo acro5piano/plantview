@@ -1,9 +1,3 @@
 @startuml
-A -> B: MANKO
-A -> B: MANKO
-A -> B: MANKO
-A -> B: MANKO
-A -> B: MANKO
-A -> B: MANKO
-A -> B: Chinko
+A -> B: Say Hello
 @enduml
