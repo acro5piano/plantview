@@ -1,0 +1,9 @@
+@startuml
+A -> B: MANKO
+A -> B: MANKO
+A -> B: MANKO
+A -> B: MANKO
+A -> B: MANKO
+A -> B: MANKO
+A -> B: MANKO
+@enduml
