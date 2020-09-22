@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/10719495/93864228-87988080-fcff-11ea-91d9-147bccd4892f.png)
+
 # Plantview
 
 PlantUML viewer
@@ -5,9 +7,10 @@ PlantUML viewer
 # Features
 
 - Hot Module Replacement (HMR) will help you to seamlessly write and preview UML
+- Easy installation with Docker + NPM
+- Super fast, dockerized local plantuml server
 - Works even in Offline
 - You can use your favorite editor
-- Easy installation with Docker + NPM
 
 # Getting Started
 
@@ -22,9 +25,7 @@ Write your UML:
 ```plantuml
 ' my-diagram.uml
 
-@startuml
 A -> B: Say Hello
-@enduml
 ```
 
 Then, run the following command:
@@ -33,4 +34,4 @@ Then, run the following command:
 plantview my-diagram.uml
 ```
 
-You will see your default browser launch. Every time you update the UML file, your browser will automatically reload it.
+You will see your default browser launch. Every time you update the UML file, your browser will automatically reload it!
