@@ -1,8 +1,8 @@
-![image](https://user-images.githubusercontent.com/10719495/93864228-87988080-fcff-11ea-91d9-147bccd4892f.png)
-
 # Plantview
 
-PlantUML viewer
+PlantUML viewer powered by Docker + Webpack HMR
+
+![image](https://user-images.githubusercontent.com/10719495/93864228-87988080-fcff-11ea-91d9-147bccd4892f.png)
 
 # Features
 
@@ -11,6 +11,11 @@ PlantUML viewer
 - Super fast, dockerized local plantuml server
 - Works even in Offline
 - You can use your favorite editor
+
+# Prerequisites
+
+- Docker
+- Node >= 10
 
 # Getting Started
 
