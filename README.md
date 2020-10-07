@@ -22,6 +22,7 @@ PlantUML viewer powered by Docker + Webpack HMR
 First, install Plantview:
 
 ```
+docker pull plantuml/plantuml-server
 npm -g install plantview
 ```
 
