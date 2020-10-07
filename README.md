@@ -2,7 +2,7 @@
 
 PlantUML viewer powered by Docker + Webpack HMR
 
-![image](./demo.gif)
+![image](./demo-2.gif)
 
 # Features
 
