@@ -13,7 +13,7 @@ function startServer({ umlFilePath, maybePort }) {
     module: {
       rules: [
         {
-          test: /\.uml/i,
+          test: /\.(uml|pu|wsd|puml|plantuml|iuml)/i,
           use: path.resolve(__dirname, '../node_modules/raw-loader'),
         },
       ],
@@ -39,7 +39,7 @@ function startServer({ umlFilePath, maybePort }) {
 
   const server = new WebpackDevServer(webpack(config), options)
 
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     server.listen(port, '0.0.0.0', function (err) {
       if (err) {
         error(err)
