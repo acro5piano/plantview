@@ -60,6 +60,6 @@ Then, run the following command:
 plantview my-diagram.uml
 ```
 
-![image](./assets/example.png)
+![image](./assets/example-2.png)
 
 You will see your default browser launch. Every time you update the UML file, your browser will automatically reload it!
