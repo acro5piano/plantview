@@ -27,17 +27,12 @@ function startServer({ umlFilePath, maybePort }) {
     ],
   }
 
-  const options = {
-    hot: true,
-    open: true,
-    quiet: true,
-    noInfo: true,
-    stats: 'none',
-  }
-
   const port = maybePort || DEFAULT_PORT
 
-  const server = new WebpackDevServer(webpack(config), options)
+  const server = new WebpackDevServer(webpack(config), {
+    hot: true,
+    open: true,
+  })
 
   return new Promise((resolve) => {
     server.listen(port, '0.0.0.0', function (err) {

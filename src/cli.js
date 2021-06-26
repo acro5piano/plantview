@@ -8,7 +8,7 @@ const { info, error } = require('./util')
 async function run() {
   const relativeUmlFilePath = argv._[0]
   if (!relativeUmlFilePath) {
-    error('Please specify uml file name')
+    error('Please specify an uml file name')
     return
   }
   const umlFilePath = path.resolve(process.cwd(), relativeUmlFilePath)
