@@ -14,7 +14,7 @@ function startServer({ umlFilePath, maybePort }) {
       rules: [
         {
           test: /\.(uml|pu|wsd|puml|plantuml|iuml)/i,
-          use: path.resolve(__dirname, '../node_modules/raw-loader'),
+          use: 'raw-loader',
         },
       ],
     },

@@ -1,12 +1,18 @@
 {
   "name": "plantview",
-  "version": "0.0.6",
-  "main": "index.js",
+  "version": "0.0.7",
+  "main": "src/server.js",
   "repository": "git@github.com:acro5piano/tui-editor-test",
   "author": "gosho-kazuya <ketsume0211@gmail.com>",
   "license": "MIT",
+  "files": [
+    "bin/plantview.js",
+    "src/*.js"
+  ],
   "bin": {
-    "plantview": "bin/plantview.js",
+    "plantview": "bin/plantview.js"
+  },
+  "scripts": {
     "prepare": "simple-git-hooks"
   },
   "dependencies": {
