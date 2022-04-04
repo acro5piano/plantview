@@ -35,7 +35,7 @@ function startServer({ umlFilePath, maybePort }) {
   })
 
   return new Promise((resolve) => {
-    server.listen(port, '0.0.0.0', function (err) {
+    server.listen(port, 'localhost', function (err) {
       if (err) {
         error(err)
       }
